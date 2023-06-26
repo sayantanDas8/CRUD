@@ -1,0 +1,67 @@
+{
+  "item": [
+    {
+      "item_name": "Mobile",
+      "company": "Samsung",
+      "price": "15000",
+      "desc": "2 GB RAM",
+      "id": 1
+    },
+    {
+      "item_name": "Laptop",
+      "company": "Lenovo",
+      "price": "40000",
+      "desc": "8 GB RAM",
+      "id": 2
+    },
+    {
+      "item_name": "Tablet",
+      "company": "LG",
+      "price": "25000",
+      "desc": "4 GB RAM",
+      "id": 3
+    },
+    {
+      "item_name": "Water-Heater",
+      "company": "Bajaj",
+      "price": "8500",
+      "desc": "Good quality of water heating",
+      "id": 4
+    },
+    {
+      "item_name": "Mixer-Grinder",
+      "company": "Philips",
+      "price": "3500",
+      "desc": "Good quality of mixing & grinding",
+      "id": 5
+    },
+    {
+      "item_name": "Keyboard",
+      "company": "Hp",
+      "price": "800",
+      "desc": "Good quality of keypad & easy to type",
+      "id": 7
+    },
+    {
+      "item_name": "Mouse",
+      "company": "Lapcare",
+      "price": "500",
+      "desc": "Very fast response & smooth scrolling",
+      "id": 8
+    },
+    {
+      "item_name": "Monitor",
+      "company": "Accer",
+      "price": "12000",
+      "desc": "Good quality screen resolution (24 inch)",
+      "id": 9
+    },
+    {
+      "item_name": "Head-Phone",
+      "company": "Boat",
+      "price": "700",
+      "desc": "Good sound & speaker quality",
+      "id": 10
+    }
+  ]
+}

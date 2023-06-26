@@ -1,0 +1,29 @@
+.card{
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 70px;
+    height: 300px;
+}
+.card-header{
+    color: blue;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.company{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 45px;
+}
+.background{
+    background-color: crimson; 
+    height: 657px;
+}
+.content{
+    background-color: white;
+    border-style: none;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+}

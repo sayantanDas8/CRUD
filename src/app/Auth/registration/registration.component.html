@@ -1,0 +1,31 @@
+<div class="add_div" >
+    <h1 style="text-align: center;">Register Here</h1>
+   <div class="add_div2">
+    <form  [formGroup]="register" (ngSubmit)="submitData()">
+        <!-- <form style="text-align: center; font-size: large; display: inline;" [formGroup]="addData" (ngSubmit)="submitData()"> -->
+        <label>First Name:</label><br>
+        <input type="text" formControlName="first_name" id="first_name"><br>
+        <ng-container *ngIf="register.get('first_name')?.touched && register.get('first_name')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Last Name:</label><br>
+        <input type="text" formControlName="last_name" id="last_name"><br>
+        <ng-container *ngIf="register.get('last_name')?.touched && register.get('last_name')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Email:</label><br>
+        <input type="email" formControlName="email" id="email"><br>
+        <ng-container *ngIf="register.get('email')?.touched && register.get('email')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Password:</label><br>
+        <input type="password" formControlName="password" id="password"><br>
+        <ng-container *ngIf="register.get('password')?.touched && register.get('password')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Profile Picture:</label><br>
+        <input type="file" id="profile_pic" (change)="onFileSelection($event)"><br>
+        <input type="submit"  value="Register">
+    </form>
+</div>
+</div>

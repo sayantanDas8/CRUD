@@ -1,0 +1,19 @@
+<div class="add_div" >
+    <h1 style="text-align: center;">Login Here</h1>
+   <div class="add_div2">
+    <form  [formGroup]="signin" (ngSubmit)="submitData()">
+        <!-- <form style="text-align: center; font-size: large; display: inline;" [formGroup]="addData" (ngSubmit)="submitData()"> -->
+        <label>Email:</label><br>
+        <input type="email" formControlName="email" id="email"><br>
+        <ng-container *ngIf="signin.get('email')?.touched && signin.get('email')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Password:</label><br>
+        <input type="password" formControlName="password" id="password"><br>
+        <ng-container *ngIf="signin.get('password')?.touched && signin.get('password')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <input type="submit"  value="Login">
+    </form>
+</div>
+</div>

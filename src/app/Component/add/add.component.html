@@ -1,0 +1,26 @@
+<div class="add_div" >
+    <h1 style="text-align: center;">Add Data</h1>
+   <div class="add_div2">
+    <form  [formGroup]="addData" (ngSubmit)="submitData()">
+        <!-- <form style="text-align: center; font-size: large; display: inline;" [formGroup]="addData" (ngSubmit)="submitData()"> -->
+        <label>Add Item Name:</label><br>
+        <input type="text" formControlName="item_name" id="item_name" style="width: 29%;"><br>
+        <ng-container *ngIf="addData.get('item_name')?.touched && addData.get('item_name')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Add Company:</label><br>
+        <input type="text" formControlName="company" id="company" style="width: 29%;"><br>
+        <ng-container *ngIf="addData.get('company')?.touched && addData.get('company')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Add Price:</label><br>
+        <input type="text" formControlName="price" id="price" style="width: 29%;"><br>
+        <ng-container *ngIf="addData.get('price')?.touched && addData.get('price')?.hasError('required')">
+            <p style="color: red;">* required field</p>
+        </ng-container>
+        <label>Add Description:</label><br>
+        <input type="text" formControlName="desc" style="width: 29%;"><br>
+        <input type="submit"  value="Submit">
+    </form>
+</div>
+</div>

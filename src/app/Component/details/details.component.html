@@ -1,0 +1,39 @@
+<div class="background">
+    <h1 style="text-align: center;">View Details</h1>
+<!-- <div class="card">
+    <h5 class="card-header">
+        <label style="color: green;">Item:</label> {{single_item.item_name}}
+    </h5>
+    <div class="card-body" style="margin-top: 20px;">
+        <h3 class="company">
+            <label style="color: green;">Company:</label> {{single_item.company}}
+        </h3>
+        <h5 style="color: red;">
+            <label style="color: green;">Description:</label> {{single_item.desc}}
+        </h5>
+        <p class="card-text">
+            <label style="color: red">Price:</label> ₹{{single_item.price}}/-
+        </p>
+        <a class="btn btn-danger" style="width: 30%;" (click)="onDelete()">Delete</a>
+        <a class="btn btn-warning" style="width: 30%; margin-left: 5%;" routerLink="/edit/{{single_item.id}}">Edit</a>
+    </div>
+  </div> -->
+  <div class="content">
+    <h5 class="card-header">
+        {{single_item?.item_name}}
+    </h5><hr>
+    <div class="card-body" style="margin-top: 20px;">
+    <h3 class="company">
+        <label style="color: green;">Company:</label> {{single_item?.company}}
+    </h3>
+    <h5 style="color: red;">
+        <label style="color: green;">Description:</label> {{single_item?.desc}}
+    </h5>
+    <p class="card-text">
+        <label style="color: red">Price:</label> ₹{{single_item?.price}}/-
+    </p>
+    <a class="btn btn-danger" style="width: 30%;" (click)="onDelete()">Delete</a>
+    <a class="btn btn-warning" style="width: 30%; margin-left: 5px;" routerLink="/edit/{{single_item?.id}}">Edit</a>
+</div>
+  </div>
+</div>

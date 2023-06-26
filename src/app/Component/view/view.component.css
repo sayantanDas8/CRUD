@@ -1,0 +1,21 @@
+.empty{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    padding-top: 100px;
+}
+.background{
+    background-color: aqua; 
+    height: auto; 
+}
+.heading{
+    text-align: center; 
+    padding-bottom: 40px;
+}
+.card{
+    text-align: center; 
+    border: none;
+}
+#search{
+    padding-bottom: 10px;
+}

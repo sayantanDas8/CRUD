@@ -1,0 +1,39 @@
+.add_div {
+    background-color: gray;
+    height: 83.5vh;
+}
+
+.add_div2 {
+    background-color: deeppink;
+    border-style: double;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.add_div2 form {
+    text-align: center;
+    font-size: large;
+    margin: 42px 16px;
+}
+
+.add_div2 form label {
+    font-weight: 900;
+    font-size: 1.18vw;
+}
+
+.add_div2 form input[type="submit"] {
+    margin: 5px;
+    width: 30%;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1.18vw;
+}
+
+#email{
+    width: 29%;
+}
+#password{
+    width: 29%;
+}

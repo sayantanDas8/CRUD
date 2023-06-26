@@ -1,0 +1,16 @@
+<div class="add_div" >
+    <h1 style="text-align: center;">Edit Data</h1>
+   <div class="add_div2">
+    <form  [formGroup]="editData" (ngSubmit)="submitData()">
+        <label>Edit Item Name:</label><br>
+        <input type="text" formControlName="item_name" style="width: 29%;"><br>
+        <label>Edit Company:</label><br>
+        <input type="text" formControlName="company" style="width: 29%;"><br>
+        <label>edit Price:</label><br>
+        <input type="text" formControlName="price" style="width: 29%;"><br>
+        <label>edit Description:</label><br>
+        <input type="text" formControlName="desc" style="width: 29%;"><br>
+        <input type="submit"  value="Submit">
+    </form>
+</div>
+</div>

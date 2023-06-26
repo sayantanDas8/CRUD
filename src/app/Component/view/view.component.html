@@ -1,0 +1,28 @@
+  <div class="background py-3">
+    <h1 class="heading">View Data</h1>
+    <ng-container *ngIf="view.length; else elseBlock">
+      <form class="d-flex" role="search" [formGroup]="searching" (ngSubmit)="afterSearch()" id="search">
+        <input class="form-control me-2" type="text" placeholder="Search" formControlName="sText">
+        <input class="btn btn-warning" type="submit">
+      </form>
+   <div class="row" style="margin: auto;">
+    <ng-container *ngFor="let x of view">
+    <div class="col-sm-3 mb-3 mb-sm-3">
+      <div class="card">
+        <h5 class="card-header" style="color: blue;">{{x?.item_name}}</h5>
+        <div class="card-body">
+            <h3>{{x?.company}}</h3>
+          <p class="card-text" style="color: red;">₹{{x?.price}}/-</p>
+            <a class="btn btn-success" routerLink="details/{{x.id}}">View More</a>
+        </div>
+      </div>
+    </div>
+</ng-container>
+</div>
+</ng-container>
+<ng-template #elseBlock>
+  <div style="background-color: aqua; height: 65.5vh;">
+  <h5 class="empty">No Items Available!</h5>
+  </div>
+</ng-template>
+</div>
